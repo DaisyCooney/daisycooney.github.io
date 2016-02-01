@@ -4,7 +4,8 @@ email: daisy.a.cooney@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Contact me regarding Policy.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://daisycooney.github.io" # the base hostname & protocol for your site
+domain: "www.daisycooney.co.uk"
+url: "http://www.daisycooney.co.uk" # the base hostname & protocol for your site
 # twitter_username: LadyDaisyA
 # github_username:  DaisyCooney
 
