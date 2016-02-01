@@ -2,16 +2,21 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
+      <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>
+            <a href="/files/CV.pdf">
+              <span class="icon">
+                <img src="/images/cv.svg" height="16" ></img>
+              </span>
+              <span class="username">Curriculum Vitae</span>
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-2">
+      <div class="footer-col footer-col-1">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -42,19 +47,21 @@
           </li>
           {% endif %}
 
+          {% if site.email %}
           <li>
-            <a href="/files/CV.pdf">
+            <a href="mailto:{{ site.email }}">
               <span class="icon">
-                <img src="/images/cv.svg" height="16" ></img>
+                <img src="/images/email.svg" height="16" ></img>
               </span>
-              <span class="username">Curriculum Vitae</span>
+              <span class="username">Email</span>
             </a>
           </li>
+          {% endif %}
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
+      <div class="footer-col footer-col-1">
+        <p class="footer-description">{{ site.description }}</p>
       </div>
     </div>
 

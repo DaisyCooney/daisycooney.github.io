@@ -93,7 +93,11 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-heading {
@@ -102,9 +106,18 @@
 }
 
 .contact-list,
-.social-media-list {
+.social-media-list,
+.footer-description {
     list-style: none;
     margin-left: 0;
+}
+
+.social-media-list {
+  text-align: center;
+}
+
+.footer-description {
+  text-align: right;
 }
 
 .footer-col-wrapper {
@@ -117,7 +130,6 @@
 .footer-col {
     float: left;
     margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
